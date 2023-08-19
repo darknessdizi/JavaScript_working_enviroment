@@ -4,7 +4,9 @@
   "description": "Browser based game",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,18 @@
   "bugs": {
     "url": "https://github.com/darknessdizi/JavaScript_working_enviroment/issues"
   },
-  "homepage": "https://github.com/darknessdizi/JavaScript_working_enviroment#readme"
+  "homepage": "https://github.com/darknessdizi/JavaScript_working_enviroment#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "eslint": "^8.47.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "core-js": "^3.32.0"
+  }
 }
